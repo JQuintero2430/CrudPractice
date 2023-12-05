@@ -1,0 +1,22 @@
+INSERT INTO Maker(name) VALUES('Asus');
+INSERT INTO Maker(name) VALUES('Lenovo');
+INSERT INTO Maker(name) VALUES('Hewlett-Packard');
+INSERT INTO Maker(name) VALUES('Samsung');
+INSERT INTO Maker(name) VALUES('Seagate');
+INSERT INTO Maker(name) VALUES('Crucial');
+INSERT INTO Maker(name) VALUES('Gigabyte');
+INSERT INTO Maker(name) VALUES('Huawei');
+INSERT INTO Maker(name) VALUES('Xiaomi');
+
+INSERT INTO Product(name, price, maker_id) VALUES('Disco duro SATA3 1TB', 86.99, (SELECT id FROM Maker WHERE name = 'Seagate'));
+INSERT INTO Product(name, price, maker_id) VALUES('Memoria RAM DDR4 8GB', 120, (SELECT id FROM Maker WHERE name = 'Crucial'));
+INSERT INTO Product(name, price, maker_id) VALUES('Disco SSD 1 TB', 150.99, (SELECT id FROM Maker WHERE name = 'Samsung'));
+INSERT INTO Product(name, price, maker_id) VALUES('GeForce GTX 1050Ti', 185, (SELECT id FROM Maker WHERE name = 'Gigabyte'));
+INSERT INTO Product(name, price, maker_id) VALUES('GeForce GTX 1080 Xtreme', 755, (SELECT id FROM Maker WHERE name = 'Crucial'));
+INSERT INTO Product(name, price, maker_id) VALUES('Monitor 24 LED Full HD', 202, (SELECT id FROM Maker WHERE name = 'Asus'));
+INSERT INTO Product(name, price, maker_id) VALUES('Monitor 27 LED Full HD', 245.99, (SELECT id FROM Maker WHERE name = 'Asus'));
+INSERT INTO Product(name, price, maker_id) VALUES('Portátil Yoga 520', 559, (SELECT id FROM Maker WHERE name = 'Lenovo'));
+INSERT INTO Product(name, price, maker_id) VALUES('Portátil Ideapd 320', 444, (SELECT id FROM Maker WHERE name = 'Lenovo'));
+INSERT INTO Product(name, price, maker_id) VALUES('Impresora HP Deskjet 3720', 59.99, (SELECT id FROM Maker WHERE name = 'Hewlett-Packard'));
+INSERT INTO Product(name, price, maker_id) VALUES('Impresora HP Laserjet Pro M26nw', 180, (SELECT id FROM Maker WHERE name = 'Hewlett-Packard'));
+INSERT INTO Product(name, price, maker_id) VALUES('Impresora Samsung Xpress C480FW', 245, (SELECT id FROM Maker WHERE name = 'Samsung'));
