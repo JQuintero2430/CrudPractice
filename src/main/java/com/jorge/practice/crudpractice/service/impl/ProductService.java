@@ -34,8 +34,8 @@ public class ProductService implements IProductService {
     }
 
     @Override
-    public Product save(Product product) {
-        return productDao.save(product);
+    public void save(Product product) {
+        productDao.save(product);
     }
 
     @Override

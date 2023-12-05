@@ -10,7 +10,7 @@ public interface IProductService {
     Optional<Product> findById(Long id);
     List<Product> findAll();
     List<Product> findProductByPriceBetween(BigDecimal min, BigDecimal max);
-    Product save(Product product);
+    void save(Product product);
     void deleteById(Long id);
     Optional<Product> update(Product product);
 }

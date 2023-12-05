@@ -8,7 +8,7 @@ import java.util.Optional;
 public interface IMakerService {
     Optional<Maker> findById(Long id);
     List<Maker> findAll();
-    Maker save(Maker maker);
+    void save(Maker maker);
     void deleteById(Long id);
     Optional<Maker> update(Maker maker);
 }

@@ -4,7 +4,6 @@ import com.jorge.practice.crudpractice.entity.Maker;
 import com.jorge.practice.crudpractice.persistence.IMakerDao;
 import com.jorge.practice.crudpractice.service.IMakerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.SpringVersion;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -29,8 +28,8 @@ public class MakerService implements IMakerService {
     }
 
     @Override
-    public Maker save(Maker maker) {
-        return makerDao.save(maker);
+    public void save(Maker maker) {
+        makerDao.save(maker);
     }
 
     @Override
